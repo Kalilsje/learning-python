@@ -1,5 +1,5 @@
 from pathlib import Path
-diret = Path("folder1")
+#diret = Path("folder1")
 #diret = diret.absolute()
 #print(diret.root)
 #print(diret.parent)
@@ -33,3 +33,9 @@ diret = Path("folder1")
 #home = Path.home()
 #for p in home.iterdir():
     #print(p)
+
+with Path("file1.txt").open("a+") as f:
+    print(f.write("\nHelena Oliveira"))
+    print(f.writelines("\nFernando","\nAluisio" ))
+    f.seek(0)
+    print(f.readlines())

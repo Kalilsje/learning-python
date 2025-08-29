@@ -1,0 +1,28 @@
+f = open("emails.txt", "r")
+print(type(f))
+print(f.name)
+print(f.mode)
+chucksize = 10
+chuck_text = f.read(chucksize)
+while len(chuck_text) > 0:
+    print(chuck_text, end="")
+    chuck_text = f.read(chucksize)
+print("\n")
+print(f.tell())
+print("\n")
+f.seek(10)
+chuck_text = f.read(chucksize)
+print(chuck_text)
+print("\n")
+f.seek(0)
+print(f.readline())
+f.seek(10)
+print(f.readline())
+print("\n")
+f.seek(0)
+print(f.readlines())
+f.seek(0)
+for line in f.readlines():
+    print(line, end = "")
+
+f.close()
