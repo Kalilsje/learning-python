@@ -19,5 +19,17 @@ diret = Path("folder1")
 #renamed_file = diret.with_stem(new_filename)
 #diret.rename(renamed_file)
 
-diret = diret / "folder12"
-diret.mkdir()
+#diret = diret / "folder12"
+#diret.mkdir()
+
+#diret = diret / "folder12"
+#new_filename = "folder34"
+#renamed_dir = diret.with_stem(new_filename)
+#diret.rename(renamed_dir)
+
+#print(list(diret.glob("**/*.txt")))
+#print(list(diret.rglob("*.txt")))
+
+#home = Path.home()
+#for p in home.iterdir():
+    #print(p)
